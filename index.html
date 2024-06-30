@@ -23,17 +23,21 @@
     <div class="header">
         <img src="images/Logo-FreeJobID.png" alt="FreeJobID Logo" id="logo">
         <h1 id="title">FreeJobID - Employment Opportunities for All, Anywhere, Anytime</h1>
+        <div class="language-select">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('id')">Indonesia</button>
+        </div>
     </div>
     <div class="container">
         <div class="content">
             <div class="job-openings">
-                <h2>JOB OPENINGS</h2>
-                <p>Please review the job details listed in the table.</p>
+                <h2 data-en="JOB OPENINGS" data-id="LOWONGAN KERJA">JOB OPENINGS</h2>
+                <p data-en="Please review the job details listed in the table." data-id="Silakan tinjau detail pekerjaan yang terdaftar di tabel.">Please review the job details listed in the table.</p>
                 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT7o8hvPqNcmE8_6oG7pTzBR1p9-dxk1GGVYB5NOs7iN5V_K0H3gXNmFTz5jlv6eht6bFQ47_Ncgg8w/pubhtml?widget=true&amp;headers=false"></iframe>
             </div>
             <div class="apply">
-                <p>To apply, please click the button below.</p>
-                <a href="#" class="apply-button">Apply Now</a>
+                <p data-en="To apply, please click the button below." data-id="Untuk melamar, silakan klik tombol di bawah ini.">To apply, please click the button below.</p>
+                <a href="#" class="apply-button" data-en="Apply Now" data-id="Lamar Sekarang">Apply Now</a>
             </div>
         </div>
     </div>
