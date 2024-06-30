@@ -39,6 +39,38 @@ To run this project locally, follow these steps:
 2. **Apply for a Job:**
    - Click on the "Apply Now" button to proceed with the job application process.
 
+## Struktur Direktori
+
+- **css/**: Menyimpan semua file CSS.
+  - `styles.css`: File CSS utama untuk situs.
+- **images/**: Menyimpan semua gambar yang digunakan di situs.
+  - `Logo-FreeJobID.png`: Logo utama situs.
+  - `favicon.ico`: Favicon untuk situs.
+- **jobs/**: Menyimpan halaman detail pekerjaan.
+  - **images/**: Menyimpan gambar khusus halaman pekerjaan.
+  - `sales-motoris.html`: Halaman detail untuk posisi Sales Motoris.
+- **js/**: Menyimpan file JavaScript.
+  - `script.js`: File JavaScript utama untuk situs.
+
+## Menambah Halaman Pekerjaan Baru
+
+1. Tambahkan file HTML baru dalam direktori `jobs/`.
+2. Tambahkan gambar terkait ke dalam direktori `jobs/images/` jika diperlukan.
+3. Perbarui halaman `index.html` untuk menambahkan link ke halaman pekerjaan baru.
+
+## Menggunakan URL Rewriting
+
+Kami menggunakan file `404.html` untuk URL rewriting. Pastikan menambahkan entri baru dalam `404.html` untuk halaman pekerjaan baru:
+
+```html
+<script>
+    var urlMap = {
+        '/job/motoris-sales': 'jobs/sales-motoris.html'
+        // Tambahkan mapping baru di sini
+    };
+</script>
+```
+
 ## Contribution
 
 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
@@ -80,7 +112,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or suggestions, feel free to contact the project maintainer at:
 
 - **Name:** Ary Wibowo
-- **Email:** ary.wibowo@gos.co.id
+- **Email:** aku@arywibowo.id
 - **LinkedIn:** [Ary Wibowo](https://www.linkedin.com/in/boworesearch/)
 
 ---
