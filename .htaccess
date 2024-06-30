@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Menyediakan akses langsung ke file yang ada
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Mengarahkan semua permintaan ke index.html
-RewriteRule . /index.html [L]
