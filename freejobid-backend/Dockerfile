@@ -16,4 +16,3 @@ EXPOSE 8080
 
 # Jalankan aplikasi
 CMD ["node", "server.js"]
-
