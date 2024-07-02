@@ -4,11 +4,13 @@ FROM node:14
 # Buat direktori kerja
 WORKDIR /usr/src/app
 
-# Salin package.json dan install dependensi
+# Salin package.json dan package-lock.json
 COPY package*.json ./
+
+# Install dependensi
 RUN npm install
 
-# Salin source code
+# Salin seluruh kode aplikasi
 COPY . .
 
 # Expose port 8080
