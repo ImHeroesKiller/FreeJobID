@@ -1,0 +1,15 @@
+# This file specifies files that are *not* uploaded to Google Cloud Platform
+# using gcloud.
+
+# For more information, run:
+#   $ gcloud topic gcloudignore
+#
+
+# If you would like to upload your .git directory, .gitignore file or files
+# listed in your .gitignore file, remove the `#` character below.
+
+# <.gitignore>
+.gcloudignore
+node_modules
+npm-debug.log
+.DS_Store
