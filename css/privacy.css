@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #2980b9;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header #logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header #title {
+    margin: 10px 0;
+}
+
+.header .language-select {
+    margin: 10px 0;
+}
+
+.header .language-select button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: white;
+    color: #2980b9;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header .language-select button:hover {
+    background: #3498db;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.privacy-policy h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.privacy-policy p {
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
