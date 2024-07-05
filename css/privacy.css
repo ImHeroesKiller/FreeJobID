@@ -59,6 +59,10 @@ body {
     margin: 10px 0;
 }
 
+.privacy-policy strong {
+    font-weight: bold;
+}
+
 .footer {
     background-color: #2980b9;
     color: white;
