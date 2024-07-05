@@ -2,13 +2,72 @@
 FreeJobID berkomitmen untuk melindungi privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan melindungi informasi Anda ketika Anda mengunjungi situs web kami. Harap baca kebijakan privasi ini dengan cermat. Jika Anda tidak setuju dengan ketentuan kebijakan privasi ini, harap jangan mengakses situs.
 
 <strong>Pengumpulan Data</strong>
-Kami dapat mengumpulkan informasi tentang Anda dalam berbagai cara. Informasi yang dapat kami kumpulkan di Situs mencakup data pribadi, seperti nama, alamat email, dan nomor telepon Anda, serta data demografis.
+Kami dapat mengumpulkan informasi tentang Anda dalam berbagai cara. Informasi yang dapat kami kumpulkan di Situs mencakup:
+- Data Pribadi: seperti nama, alamat email, dan nomor telepon Anda.
+- Data Demografis: seperti usia, jenis kelamin, dan lokasi Anda.
+- Data Lamaran Kerja: termasuk resume, surat lamaran, dan dokumen lain yang Anda kirimkan.
+- Data Penggunaan: seperti alamat IP, jenis browser, dan perilaku browsing.
 
 <strong>Penggunaan Data</strong>
-Memiliki informasi yang akurat tentang Anda memungkinkan kami memberikan pengalaman yang lancar, efisien, dan disesuaikan. Secara khusus, kami dapat menggunakan informasi yang dikumpulkan tentang Anda melalui Situs untuk membuat dan mengelola akun Anda, memproses transaksi Anda, dan meningkatkan layanan kami.
+Memiliki informasi yang akurat tentang Anda memungkinkan kami memberikan pengalaman yang lancar, efisien, dan disesuaikan. Secara khusus, kami dapat menggunakan informasi yang dikumpulkan tentang Anda melalui Situs untuk:
+- Membuat dan mengelola akun Anda
+- Memproses transaksi Anda
+- Meningkatkan layanan kami
+- Berkomunikasi dengan Anda tentang peluang kerja dan pembaruan lainnya
+- Memberikan dukungan pelanggan
 
 <strong>Pengungkapan Data</strong>
-Kami dapat membagikan informasi yang kami kumpulkan tentang Anda dalam situasi tertentu. Informasi Anda dapat diungkapkan sebagai berikut: Berdasarkan Hukum atau untuk Melindungi Hak, jika kami secara hukum diwajibkan untuk melakukannya.
+Kami dapat membagikan informasi yang kami kumpulkan tentang Anda dalam situasi tertentu. Informasi Anda dapat diungkapkan sebagai berikut:
+- Berdasarkan Hukum atau untuk Melindungi Hak: Jika kami diwajibkan secara hukum untuk melakukannya, atau jika kami percaya bahwa tindakan tersebut diperlukan untuk mematuhi hukum atau melindungi hak, properti, atau keselamatan FreeJobID, pengguna kami, atau orang lain.
+- Dengan Persetujuan Anda: Kami dapat membagikan informasi Anda dengan persetujuan Anda.
 
-<strongPerlindungan Data</strong>
+<strong>Perlindungan Data</strong>
 Kami menggunakan langkah-langkah keamanan administratif, teknis, dan fisik untuk membantu melindungi informasi pribadi Anda. Meskipun kami telah mengambil langkah-langkah yang wajar untuk mengamankan informasi pribadi yang Anda berikan kepada kami, harap diketahui bahwa terlepas dari upaya kami, tidak ada langkah keamanan yang sempurna atau tidak dapat ditembus, dan tidak ada metode transmisi data yang dapat dijamin terhadap setiap penyadapan atau jenis penyalahgunaan lainnya.
+
+<strong>Dasar Hukum di Indonesia</strong>
+FreeJobID beroperasi sesuai dengan hukum dan peraturan di Republik Indonesia, termasuk namun tidak terbatas pada:
+- Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (UU ITE)
+- Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP)
+Undang-undang ini mengatur bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda. Dengan menggunakan situs kami, Anda setuju untuk mematuhi peraturan ini.
+
+<strong>Peran FreeJobID</strong>
+FreeJobID berfungsi sebagai portal kerja yang membantu menyebarkan informasi pekerjaan dari perusahaan-perusahaan yang memiliki hak legal atau kepemilikan atas informasi lowongan kerja tersebut. Kami memfasilitasi hubungan antara pencari kerja dan pemberi kerja, tetapi tidak bertanggung jawab atas konten lowongan kerja yang disediakan oleh pemberi kerja. Kami memastikan bahwa lowongan kerja di situs kami berasal dari sumber yang dapat dipercaya dan mematuhi hukum yang berlaku.
+
+<strong>Hubungi Kami</strong>
+Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini, silakan hubungi kami di <strong>Kebijakan Privasi</strong>
+FreeJobID berkomitmen untuk melindungi privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan melindungi informasi Anda ketika Anda mengunjungi situs web kami. Harap baca kebijakan privasi ini dengan cermat. Jika Anda tidak setuju dengan ketentuan kebijakan privasi ini, harap jangan mengakses situs.
+
+<strong>Pengumpulan Data</strong>
+Kami dapat mengumpulkan informasi tentang Anda dalam berbagai cara. Informasi yang dapat kami kumpulkan di Situs mencakup:
+- Data Pribadi: seperti nama, alamat email, dan nomor telepon Anda.
+- Data Demografis: seperti usia, jenis kelamin, dan lokasi Anda.
+- Data Lamaran Kerja: termasuk resume, surat lamaran, dan dokumen lain yang Anda kirimkan.
+- Data Penggunaan: seperti alamat IP, jenis browser, dan perilaku browsing.
+
+<strong>Penggunaan Data</strong>
+Memiliki informasi yang akurat tentang Anda memungkinkan kami memberikan pengalaman yang lancar, efisien, dan disesuaikan. Secara khusus, kami dapat menggunakan informasi yang dikumpulkan tentang Anda melalui Situs untuk:
+- Membuat dan mengelola akun Anda
+- Memproses transaksi Anda
+- Meningkatkan layanan kami
+- Berkomunikasi dengan Anda tentang peluang kerja dan pembaruan lainnya
+- Memberikan dukungan pelanggan
+
+<strong>Pengungkapan Data</strong>
+Kami dapat membagikan informasi yang kami kumpulkan tentang Anda dalam situasi tertentu. Informasi Anda dapat diungkapkan sebagai berikut:
+- Berdasarkan Hukum atau untuk Melindungi Hak: Jika kami diwajibkan secara hukum untuk melakukannya, atau jika kami percaya bahwa tindakan tersebut diperlukan untuk mematuhi hukum atau melindungi hak, properti, atau keselamatan FreeJobID, pengguna kami, atau orang lain.
+- Dengan Persetujuan Anda: Kami dapat membagikan informasi Anda dengan persetujuan Anda.
+
+<strong>Perlindungan Data</strong>
+Kami menggunakan langkah-langkah keamanan administratif, teknis, dan fisik untuk membantu melindungi informasi pribadi Anda. Meskipun kami telah mengambil langkah-langkah yang wajar untuk mengamankan informasi pribadi yang Anda berikan kepada kami, harap diketahui bahwa terlepas dari upaya kami, tidak ada langkah keamanan yang sempurna atau tidak dapat ditembus, dan tidak ada metode transmisi data yang dapat dijamin terhadap setiap penyadapan atau jenis penyalahgunaan lainnya.
+
+<strong>Dasar Hukum di Indonesia</strong>
+FreeJobID beroperasi sesuai dengan hukum dan peraturan di Republik Indonesia, termasuk namun tidak terbatas pada:
+- Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (UU ITE)
+- Undang-Undang Nomor 27 Tahun 2022 tentang Perlindungan Data Pribadi (UU PDP)
+Undang-undang ini mengatur bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda. Dengan menggunakan situs kami, Anda setuju untuk mematuhi peraturan ini.
+
+<strong>Peran FreeJobID</strong>
+FreeJobID berfungsi sebagai portal kerja yang membantu menyebarkan informasi pekerjaan dari perusahaan-perusahaan yang memiliki hak legal atau kepemilikan atas informasi lowongan kerja tersebut. Kami memfasilitasi hubungan antara pencari kerja dan pemberi kerja, tetapi tidak bertanggung jawab atas konten lowongan kerja yang disediakan oleh pemberi kerja. Kami memastikan bahwa lowongan kerja di situs kami berasal dari sumber yang dapat dipercaya dan mematuhi hukum yang berlaku.
+
+<strong>Hubungi Kami</strong>
+Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini, silakan hubungi kami di aku@arywibowo.id.
