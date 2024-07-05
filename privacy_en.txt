@@ -2,13 +2,36 @@
 FreeJobID is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
 
 <strong>Data Collection</strong>
-We may collect information about you in a variety of ways. The information we may collect on the Site includes personal data, such as your name, email address, and phone number, as well as demographic data.
+We may collect information about you in a variety of ways. The information we may collect on the Site includes:
+- Personal Data: such as your name, email address, and phone number.
+- Demographic Data: such as your age, gender, and location.
+- Job Application Data: including your resume, cover letter, and other documents you submit.
+- Usage Data: such as IP address, browser type, and browsing behavior.
 
 <strong>Data Use</strong>
-Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to create and manage your account, process your transactions, and improve our services.
+Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to:
+- Create and manage your account
+- Process your transactions
+- Improve our services
+- Communicate with you about job opportunities and other updates
+- Provide customer support
 
 <strong>Data Disclosure</strong>
-We may share information we have collected about you in certain situations. Your information may be disclosed as follows: By Law or to Protect Rights, in the event that we are legally compelled to do so.
+We may share information we have collected about you in certain situations. Your information may be disclosed as follows:
+- By Law or to Protect Rights: If we are legally required to do so, or if we believe that such action is necessary to comply with the law or to protect the rights, property, or safety of FreeJobID, our users, or others.
+- With Your Consent: We may share your information with your consent.
 
 <strong>Data Protection</strong>
 We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+
+<strong>Legal Basis in Indonesia</strong>
+FreeJobID operates in accordance with the laws and regulations of the Republic of Indonesia, including but not limited to:
+- Law No. 11 of 2008 on Electronic Information and Transactions (ITE Law)
+- Law No. 27 of 2022 on Personal Data Protection (PDP Law)
+These laws govern how we collect, use, and protect your personal data. By using our site, you agree to comply with these regulations.
+
+<strong>Role of FreeJobID</strong>
+FreeJobID serves as a job portal that helps disseminate job information from companies that have legal rights or ownership over the job vacancies. We facilitate the connection between job seekers and employers but do not take responsibility for the content of the job listings provided by employers. We ensure that the job listings on our site are from reputable sources and comply with applicable laws.
+
+<strong>Contact Us</strong>
+If you have any questions or concerns about this Privacy Policy, please contact us at aku@arywibowo.id.
