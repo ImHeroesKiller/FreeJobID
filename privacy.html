@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="css/privacy.css">
 </head>
 <body>
-    <header class="header">
-        <img src="images/Logo-FreeJobID.png" alt="FreeJobID Logo" id="logo">
-        <h1 id="title">FreeJobID - Privacy Policy & Legal Information</h1>
-        <div class="language-select">
-            <button onclick="setLanguage('en')">English</button>
-            <button onclick="setLanguage('id')">Indonesia</button>
-        </div>
-    </header>
     <div class="container">
+        <header class="header">
+            <img src="images/Logo-FreeJobID.png" alt="FreeJobID Logo" id="logo">
+            <h1 id="title">FreeJobID - Privacy Policy & Legal Information</h1>
+            <div class="language-select">
+                <button onclick="setLanguage('en')">English</button>
+                <button onclick="setLanguage('id')">Indonesia</button>
+            </div>
+        </header>
         <div class="content">
             <div class="privacy-policy">
                 <h2>Privacy Policy & Legal Information</h2>
@@ -31,30 +31,21 @@
         <div class="footer-content">
             <p>&copy; 2024 FreeJobID. All rights reserved. Owned by <a href="https://arywibowo.id" target="_blank">Ary Wibowo</a>.</p>
             <p>Follow us on: <a href="https://www.linkedin.com/in/boworesearch/" target="_blank">LinkedIn</a></p>
-            <p>Contact us at: <a href="mailto:info@freejobid.com">info@freejobid.com</a></p>
         </div>
     </footer>
     <script>
         function setLanguage(language) {
-            var elements = document.querySelectorAll('[data-en]');
-            elements.forEach(function (element) {
-                if (language === 'en') {
-                    element.textContent = element.getAttribute('data-en');
-                } else if (language === 'id') {
-                    element.textContent = element.getAttribute('data-id');
-                }
-            });
-        }
-
-        function loadPrivacyContent() {
-            fetch('privacy.txt')
+            let file = language === 'en' ? 'privacy_en.txt' : 'privacy_id.txt';
+            fetch(file)
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('privacy-content').innerHTML = data.replace(/\n/g, '<br>');
                 });
         }
 
-        window.onload = loadPrivacyContent;
+        window.onload = function() {
+            setLanguage('en'); // Default language
+        };
     </script>
 </body>
 </html>
