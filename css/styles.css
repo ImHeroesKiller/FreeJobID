@@ -54,7 +54,7 @@ body {
 
 .container {
     margin-top: 100px; /* Adjust this value based on header height */
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -107,7 +107,8 @@ body {
     }
 
     .job-openings iframe {
-        height: 175px;
+        width: 600px;
+        height: 200px;
     }
 }
 
