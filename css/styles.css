@@ -68,8 +68,8 @@ body {
 
 .job-openings iframe {
     border: none;
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    max-width: 800px;
     margin-top: 20px;
 }
 
@@ -107,8 +107,7 @@ body {
     }
 
     .job-openings iframe {
-        width: 425px;
-        height: 300px;
+        max-width: 100%;
     }
 }
 
