@@ -18,115 +18,363 @@
 
         gtag('config', 'G-ZMHZWN4DWD');
     </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #2980b9;
-            color: #fff;
-            z-index: 1000;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .container {
-            margin-top: 80px;
-            padding: 20px;
-        }
-
-        .apply-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .apply-button:hover {
-            background-color: #3498db;
-        }
-
-        .footer-content {
-            text-align: center;
-            padding: 10px 20px;
-            background-color: #f4f4f4;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .footer-content p {
-            margin: 5px 0;
-        }
-
-        .footer-content a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        .footer-content a:hover {
-            text-decoration: underline;
-        }
-
-        .quote {
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            font-style: italic;
-            text-align: center;
-        }
-
-        .quote p {
-            margin: 0;
-            font-size: 1.1em;
-            color: #333;
-        }
-    </style>
 </head>
 <body>
-    <div class="header">
-        FreeJobID
-        <div style="font-size: 0.8em; margin-top: 5px;">Employment Opportunities for All, Anywhere, Anytime</div>
-    </div>
-    <div class="container">
-        <div class="content">
-            <div class="quote">
-                <p>"The future depends on what you do today. Stay motivated and keep pushing forward."</p>
-            </div>
-            <div class="job-openings">
-                <iframe width="800" height="175" src="https://lookerstudio.google.com/embed/reporting/7216edd0-b9b1-4c17-a402-3ebd1a42aaa6/page/4AM5D" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" scrolling="no"></iframe>
-                <h2>JOB OPENINGS</h2>
-                <p>Please review the job details listed in the table.</p>
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyDmwEoAhnUUvUPDuzeIe7o_fr9lz8Lwv_GqFAs48NXZjugfpTrP_nGgBviM3oBIGEKnGk9ukVe1Fr/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600" frameborder="0"></iframe>
-            </div>
-            <div class="apply">
-                <p>To apply, please click the button below.</p>
-                <a href="https://forms.gle/73S6xnudHmbnmGU49" class="apply-button">Apply Now</a>
+    <!-- Brand Header -->
+    <header class="header">
+        <div class="brand-section">
+            <a href="https://freejobid.arywibowo.id" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="images/Logo-FreeJobID.png" alt="FreeJobID Logo" class="logo">
+                <div class="brand-text">
+                    <span class="brand-title">FreeJobID</span>
+                    <span class="brand-tagline" id="header-tagline">Employment Opportunities for All, Anywhere, Anytime</span>
+                </div>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link" id="nav-home">Home</a>
+            <a href="https://forms.gle/73S6xnudHmbnmGU49" target="_blank" class="nav-link" id="nav-apply">Apply</a>
+            <div class="language-select">
+                <button class="lang-btn active" id="lang-en" onclick="changeLanguage('en')">English</button>
+                <button class="lang-btn" id="lang-id" onclick="changeLanguage('id')">Indonesia</button>
             </div>
         </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="quote-box">
+                <span id="hero-quote">"The future depends on what you do today. Stay motivated and keep pushing forward."</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">Find Your Next Big Opportunity</h1>
+            <p class="hero-subtitle" id="hero-subtitle">Discover flexible, freelance, part-time and permanent roles curated just for you. Launch your career path today.</p>
+
+            <!-- Search Bar -->
+            <div class="search-filter-wrapper">
+                <div class="search-input-container">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="search-input" placeholder="Search job title, skills or keywords..." oninput="filterJobs()">
+                </div>
+                <button class="search-btn" id="search-btn" onclick="filterJobs()">Search</button>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="category-filters" id="category-filters">
+                <!-- Dynamic loading of filters -->
+            </div>
+        </section>
+
+        <!-- Analytics Dashboard Collapsible Panel -->
+        <section class="analytics-section">
+            <div class="analytics-trigger" onclick="toggleAnalytics()">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <h3 id="analytics-title">Market Demographics & Insights Dashboard</h3>
+                </div>
+                <span class="analytics-badge" id="analytics-badge">Interactive Visuals</span>
+            </div>
+            <div class="analytics-content collapsed" id="analytics-panel">
+                <iframe width="100%" height="320" src="https://lookerstudio.google.com/embed/reporting/7216edd0-b9b1-4c17-a402-3ebd1a42aaa6/page/4AM5D" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            </div>
+        </section>
+
+        <!-- Job Grid Header -->
+        <div class="section-header">
+            <div class="section-title-container">
+                <h2 id="section-title">Open Vacancies <span class="jobs-count" id="jobs-count">0</span></h2>
+            </div>
+        </div>
+
+        <!-- Job Card Grid -->
+        <div class="job-grid" id="job-grid">
+            <!-- Dynamic Job Cards will be injected here -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--neutral-400); margin-bottom: 12px;"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <div class="empty-title" id="empty-title">No positions found</div>
+            <div class="empty-desc" id="empty-desc">Try adjusting your search keywords or choosing another category filter.</div>
+        </div>
+
+        <!-- Apply CTA Banner -->
+        <section class="apply-cta-banner">
+            <h2 class="cta-title" id="cta-title">Ready to Start Your Career Journey?</h2>
+            <p class="cta-subtitle" id="cta-subtitle">Complete your recruitment profile and instantly submit your CV to our centralized database.</p>
+            <a href="https://forms.gle/73S6xnudHmbnmGU49" class="cta-btn" id="cta-btn" target="_blank">Submit CV & Apply Now</a>
+        </section>
     </div>
+
+    <!-- Modern Footer -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 FreeJobID. All rights reserved. Website by <a href="https://arywibowo.id" target="_blank">Ary Wibowo</a></p>
-            <p>Follow us on:
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h4>FreeJobID</h4>
+                <p id="footer-brand-desc">Empowering employment opportunities for anyone, anywhere, at any time since 2024.</p>
+            </div>
+            <div class="footer-links">
+                <h5 id="footer-resources-title">Resources</h5>
+                <ul>
+                    <li><a href="#" id="footer-link-home">Home</a></li>
+                    <li><a href="https://forms.gle/73S6xnudHmbnmGU49" target="_blank" id="footer-link-apply">Apply Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5 id="footer-legal-title">Legal & Support</h5>
+                <ul>
+                    <li><a href="https://freejobid.arywibowo.id/privacy" target="_blank" id="footer-link-privacy">Privacy Policy</a></li>
+                    <li><a href="mailto:info@freejobid.com">info@freejobid.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FreeJobID. All rights reserved. Platform by <a href="https://arywibowo.id" target="_blank" style="color: white; text-decoration: none; font-weight: 600;">Ary Wibowo</a></p>
+            <div class="footer-bottom-links">
                 <a href="https://www.linkedin.com/in/boworesearch/" target="_blank">LinkedIn</a>
-            </p>
-            <p>Privacy & Legal Policy :
-                <a href="https://freejobid.arywibowo.id/privacy" target="_blank">click here</a>
-            </p>
+            </div>
         </div>
     </footer>
+
+    <!-- Job Data JSON Source -->
+    <script src="js/jobs_data.js"></script>
+
+    <!-- Client Controller Logic -->
+    <script>
+        let currentLanguage = 'en';
+        let selectedCategory = 'All';
+
+        const TRANSLATIONS = {
+            en: {
+                headerTagline: 'Employment Opportunities for All, Anywhere, Anytime',
+                navHome: 'Home',
+                navApply: 'Apply Now',
+                heroQuote: '"The future depends on what you do today. Stay motivated and keep pushing forward."',
+                heroTitle: 'Discover Your Next Career Move',
+                heroSubtitle: 'Explore remote, flexible, part-time, and freelance roles from verified employers. Land your perfect job today.',
+                searchPlaceholder: 'Search by position title, requirements or categories...',
+                searchBtn: 'Search',
+                analyticsTitle: 'Recruitment Analytics & Market Demographics Dashboard',
+                analyticsBadge: 'Interactive Insights',
+                sectionTitle: 'Available Vacancies',
+                emptyTitle: 'No positions matched your query',
+                emptyDesc: 'Try broadening your search term or choosing a different category filter.',
+                ctaTitle: 'Ready to Start Your Career Journey?',
+                ctaSubtitle: 'Submit your profile and resume directly to our employers pool.',
+                ctaBtn: 'Submit CV & Apply Now',
+                footerBrandDesc: 'Empowering employment opportunities for anyone, anywhere, at any time since 2024.',
+                footerResourcesTitle: 'Navigation',
+                footerLegalTitle: 'Privacy & Contact',
+                qualificationsTitle: 'Requirements Preview',
+                btnDetails: 'View Details',
+                btnApply: 'Apply Now',
+                categories: {
+                    All: 'All Positions',
+                    Sales: 'Sales & Marketing',
+                    Administration: 'Administration',
+                    Technical: 'Engineering & Tech',
+                    'Customer Service': 'Customer Support',
+                    Finance: 'Finance & Banking',
+                    Other: 'Others'
+                },
+                locationAll: 'Indonesia'
+            },
+            id: {
+                headerTagline: 'Peluang Kerja untuk Semua, di Mana Saja, Kapan Saja',
+                navHome: 'Beranda',
+                navApply: 'Lamar Sekarang',
+                heroQuote: '"Masa depan bergantung pada apa yang Anda lakukan hari ini. Tetap termotivasi dan terus maju."',
+                heroTitle: 'Temukan Peluang Karir Terbaik Anda',
+                heroSubtitle: 'Cari pekerjaan fleksibel, freelance, paruh waktu, dan tetap dari pemberi kerja terverifikasi. Raih karir impian Anda.',
+                searchPlaceholder: 'Cari berdasarkan posisi lowongan, kualifikasi, atau kategori...',
+                searchBtn: 'Cari',
+                analyticsTitle: 'Dasbor Demografi Pasar & Wawasan Rekrutmen',
+                analyticsBadge: 'Visual Interaktif',
+                sectionTitle: 'Lowongan yang Tersedia',
+                emptyTitle: 'Tidak ada lowongan yang cocok',
+                emptyDesc: 'Coba ubah kata kunci pencarian Anda atau pilih kategori filter yang lain.',
+                ctaTitle: 'Siap Memulai Perjalanan Karir Anda?',
+                ctaSubtitle: 'Lengkapi profil rekrutmen Anda dan kirimkan CV Anda langsung ke database terpusat kami.',
+                ctaBtn: 'Kirim CV & Lamar Sekarang',
+                footerBrandDesc: 'Menyediakan akses kesempatan kerja bagi semua orang, di mana saja, kapan saja sejak tahun 2024.',
+                footerResourcesTitle: 'Navigasi',
+                footerLegalTitle: 'Privasi & Kontak',
+                qualificationsTitle: 'Kualifikasi Singkat',
+                btnDetails: 'Lihat Detail',
+                btnApply: 'Lamar',
+                categories: {
+                    All: 'Semua Lowongan',
+                    Sales: 'Sales & Pemasaran',
+                    Administration: 'Administrasi',
+                    Technical: 'Teknikal & Mekanik',
+                    'Customer Service': 'Layanan Pelanggan',
+                    Finance: 'Keuangan & Bank',
+                    Other: 'Lainnya'
+                },
+                locationAll: 'Indonesia'
+            }
+        };
+
+        const CATEGORY_MAP = ['All', 'Sales', 'Administration', 'Technical', 'Customer Service', 'Finance', 'Other'];
+
+        function toggleAnalytics() {
+            const panel = document.getElementById('analytics-panel');
+            panel.classList.toggle('collapsed');
+        }
+
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+
+            // Toggle active classes on language switcher buttons
+            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+            document.getElementById('lang-id').classList.toggle('active', lang === 'id');
+
+            // Apply translations to static text
+            const textMap = TRANSLATIONS[lang];
+            document.getElementById('header-tagline').textContent = textMap.headerTagline;
+            document.getElementById('nav-home').textContent = textMap.navHome;
+            document.getElementById('nav-apply').textContent = textMap.navApply;
+            document.getElementById('hero-quote').textContent = textMap.heroQuote;
+            document.getElementById('hero-title').textContent = textMap.heroTitle;
+            document.getElementById('hero-subtitle').textContent = textMap.heroSubtitle;
+            document.getElementById('search-input').placeholder = textMap.searchPlaceholder;
+            document.getElementById('search-btn').textContent = textMap.searchBtn;
+            document.getElementById('analytics-title').textContent = textMap.analyticsTitle;
+            document.getElementById('analytics-badge').textContent = textMap.analyticsBadge;
+            document.getElementById('empty-title').textContent = textMap.emptyTitle;
+            document.getElementById('empty-desc').textContent = textMap.emptyDesc;
+            document.getElementById('cta-title').textContent = textMap.ctaTitle;
+            document.getElementById('cta-subtitle').textContent = textMap.ctaSubtitle;
+            document.getElementById('cta-btn').textContent = textMap.ctaBtn;
+            document.getElementById('footer-brand-desc').textContent = textMap.footerBrandDesc;
+            document.getElementById('footer-resources-title').textContent = textMap.footerResourcesTitle;
+            document.getElementById('footer-legal-title').textContent = textMap.footerLegalTitle;
+            document.getElementById('footer-link-home').textContent = textMap.navHome;
+            document.getElementById('footer-link-apply').textContent = textMap.navApply;
+
+            // Re-render categories & jobs
+            renderCategoryFilters();
+            renderJobs();
+        }
+
+        function renderCategoryFilters() {
+            const container = document.getElementById('category-filters');
+            container.innerHTML = '';
+
+            CATEGORY_MAP.forEach(cat => {
+                const button = document.createElement('button');
+                button.className = `filter-pill ${selectedCategory === cat ? 'active' : ''}`;
+                button.textContent = TRANSLATIONS[currentLanguage].categories[cat] || cat;
+                button.onclick = () => {
+                    selectedCategory = cat;
+                    renderCategoryFilters();
+                    filterJobs();
+                };
+                container.appendChild(button);
+            });
+        }
+
+        function renderJobs(filteredJobs = JOBS_DATA) {
+            const grid = document.getElementById('job-grid');
+            const emptyState = document.getElementById('empty-state');
+            const countBadge = document.getElementById('jobs-count');
+            const textMap = TRANSLATIONS[currentLanguage];
+
+            grid.innerHTML = '';
+            countBadge.textContent = filteredJobs.length;
+
+            if (filteredJobs.length === 0) {
+                emptyState.style.display = 'block';
+                document.getElementById('section-title').style.display = 'none';
+                return;
+            }
+
+            emptyState.style.display = 'none';
+            document.getElementById('section-title').style.display = 'block';
+
+            // Set dynamic section title text
+            document.getElementById('section-title').innerHTML = `${textMap.sectionTitle} <span class="jobs-count" id="jobs-count">${filteredJobs.length}</span>`;
+
+            filteredJobs.forEach(job => {
+                const title = currentLanguage === 'en' ? job.posisi_en : job.posisi_id;
+                const desc = currentLanguage === 'en' ? job.en.deskripsi : job.id.deskripsi;
+                const quals = currentLanguage === 'en' ? job.en.kualifikasi : job.id.kualifikasi;
+
+                // Keep max 3 qualification previews on card
+                const qualPreviews = quals.slice(0, 3);
+
+                // CSS Category class
+                let catClass = 'cat-other';
+                if (job.category === 'Sales') catClass = 'cat-sales';
+                if (job.category === 'Administration') catClass = 'cat-admin';
+                if (job.category === 'Technical') catClass = 'cat-technical';
+                if (job.category === 'Customer Service') catClass = 'cat-cs';
+                if (job.category === 'Finance') catClass = 'cat-finance';
+
+                const cardHtml = `
+                    <div class="job-card">
+                        <div>
+                            <div class="card-top">
+                                <span class="card-category ${catClass}">${TRANSLATIONS[currentLanguage].categories[job.category] || job.category}</span>
+                                <span class="card-location">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    ${job.location}
+                                </span>
+                            </div>
+                            <h3 class="card-title">${title}</h3>
+                            <p class="card-desc">${desc}</p>
+                            <div class="card-qualifications">
+                                <h4 class="card-qual-title">${textMap.qualificationsTitle}</h4>
+                                <ul class="card-qual-list">
+                                    ${qualPreviews.map(q => `<li class="card-qual-item">${q}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="jobs/${job.filename}" class="btn-details">${textMap.btnDetails}</a>
+                            <a href="https://forms.gle/73S6xnudHmbnmGU49" target="_blank" class="btn-apply">${textMap.btnApply}</a>
+                        </div>
+                    </div>
+                `;
+                grid.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+
+        function filterJobs() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+            const filtered = JOBS_DATA.filter(job => {
+                // Category match
+                const categoryMatch = selectedCategory === 'All' || job.category === selectedCategory;
+                if (!categoryMatch) return false;
+
+                // Search query match (title, desc, location, qualifications)
+                const titleId = (job.posisi_id || '').toLowerCase();
+                const titleEn = (job.posisi_en || '').toLowerCase();
+                const descId = (job.id.deskripsi || '').toLowerCase();
+                const descEn = (job.en.deskripsi || '').toLowerCase();
+                const location = (job.location || '').toLowerCase();
+                const qualId = (job.id.kualifikasi || []).join(' ').toLowerCase();
+                const qualEn = (job.en.kualifikasi || []).join(' ').toLowerCase();
+
+                const textMatch = titleId.includes(query) ||
+                                  titleEn.includes(query) ||
+                                  descId.includes(query) ||
+                                  descEn.includes(query) ||
+                                  location.includes(query) ||
+                                  qualId.includes(query) ||
+                                  qualEn.includes(query);
+
+                return textMatch;
+            });
+
+            renderJobs(filtered);
+        }
+
+        // Initialize view
+        window.onload = function() {
+            changeLanguage('en');
+        };
+    </script>
 </body>
 </html>
